@@ -10,6 +10,7 @@ let p2score = 0;
 let winningScore = 25;
 let gameOver = false;
 // end of variable declaration
+
 // add click function to player 1 button
 p1button.addEventListener("click", function () {
   if (!gameOver) p1score += 1;
@@ -39,5 +40,5 @@ resetButton.addEventListener("click", function () {
 
 // add select function to selector
 winningScoreSelect.addEventListener("change", function () {
-  alert("Bomboclaat!");
+  winningScore = parseInt (this.value);
 });
