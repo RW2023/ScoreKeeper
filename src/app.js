@@ -4,6 +4,7 @@ const p2button = document.querySelector("#p2Button");
 const p1Display = document.querySelector("#p1Display");
 const p2Display = document.querySelector("#p2Display");
 const resetButton = document.querySelector('#reset');
+const winningScoreSelect = document.querySelector('#playTo');
 let p1score = 0;
 let p2score = 0;
 let winningScore = 5;
@@ -32,6 +33,4 @@ resetButton.addEventListener('click', function(){
   p2score = 0;
   p1Display.textContent=0;
   p2Display.textContent = 0;
-  
-
 })
