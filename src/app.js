@@ -8,5 +8,6 @@ const p2Display = document.querySelector('#p2Display');
 
 p1button.addEventListener('click', function(){
     p1score += 1;
+    p1Display.textContent = p1score;
 })
 
