@@ -44,4 +44,5 @@ function reset() {
 // add select function to selector
 winningScoreSelect.addEventListener("change", function () {
   winningScore = parseInt(this.value);
+  reset( );
 });
