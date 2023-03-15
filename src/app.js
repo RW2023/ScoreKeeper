@@ -7,7 +7,7 @@ const resetButton = document.querySelector("#reset");
 const winningScoreSelect = document.querySelector("#playTo");
 let p1score = 0;
 let p2score = 0;
-let winningScore = 25;
+let winningScore = 0;
 let gameOver = false;
 // end of variable declaration
 
@@ -30,15 +30,18 @@ p2button.addEventListener("click", function () {
 });
 
 // add click function to reset button
-resetButton.addEventListener("click", function () {
-  gameOver = false;
-  p1score = 0;
-  p2score = 0;
-  p1Display.textContent = 0;
-  p2Display.textContent = 0;
-});
+resetButton.addEventListener("click", reset)
+
+function reset() {
+    gameOver = false;
+    p1score = 0;
+    p2score = 0;
+    p1Display.textContent = 0;
+    p2Display.textContent = 0;
+  }
+
 
 // add select function to selector
 winningScoreSelect.addEventListener("change", function () {
-  winningScore = parseInt (this.value);
+  winningScore = parseInt(this.value);
 });
